@@ -4,7 +4,7 @@ RUN Rscript -e "install.packages(c('shiny', 'ggplot2'), repos='https://cloud.r-p
 
 RUN rm -rf /srv/shiny-server/*
 
-COPY App.R /srv/shiny-server/App.R
+COPY App.R /srv/shiny-server/app.R
 
 RUN chown -R shiny:shiny /srv/shiny-server
 
